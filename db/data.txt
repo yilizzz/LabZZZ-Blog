@@ -1,0 +1,25 @@
+alter table tb_post drop foreign key post_category;
+
+ALTER TABLE tb_post ADD CONSTRAINT post_category FOREIGN KEY (category)
+REFERENCES tb_category (id) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+INSERT INTO tb_category VALUES (2, 2, NULL, 'Quotidien');
+INSERT INTO tb_category VALUES (3, 2, NULL, 'Anormal');
+INSERT INTO tb_category VALUES (4, 2, 3, 'Confinemant');
+INSERT INTO tb_category VALUES (5, 2, 2, 'Avoir faim');
+INSERT INTO tb_category VALUES (6, 2, 3, 'Surprise');
+INSERT INTO tb_category VALUES (7, 2, NULL, 'Bazar');
+INSERT INTO tb_category VALUES (8, 2, 7, 'test');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:51:38', DEFAULT, 2, 2, 'Titre 2', 'Text Test.');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:52:37', DEFAULT, 2, 3, 'Titre 3', 'Text faim');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:53:26', DEFAULT, 2, 4, 'Titre 4', 'Text Test.');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:54:27', DEFAULT, 2, 5, 'Titre 5', 'Text Test');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:55:28', DEFAULT, 2, 6, 'Titre 6', 'Text Test.');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:56:29', DEFAULT, 2, 7, 'Titre 7', 'Text Test');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:57:30', DEFAULT, 2, 9, 'Titre 9', 'Text Test.');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:58:31', DEFAULT, 2, 10, 'Titre 10', 'Text Test');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:59:32', DEFAULT, 1, 1, 'Titre 1', 'Text Test.');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:50:33', DEFAULT, 2, 5, 'Titre 5.2', 'Text Test');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:51:34', DEFAULT, 2, 4, 'Titre 4.2', 'Text Test.');
+INSERT INTO tb_post VALUES(DEFAULT, '2022-06-02 20:51:35', DEFAULT, 2, 6, 'Titre 6.2', 'Text Test');
