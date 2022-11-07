@@ -1,18 +1,18 @@
 # LabZZZ-Blog
 
-A simple blog as a homework after a dure auto-apprentisage
+## A simple blog as a homework after a dure auto-apprentisage
 
-Basic Features
-  Users login, register
-  Categorize articles
-  Content moderation
-  Basic read and comment fonction 
+## Basic Features
+* Users login, register
+* Categorize articles
+* Content moderation
+* Basic read and comment fonction 
 
-Server Requirements
-PHP 8.1.5 + 10.4.24-MariaDB + Apache/2.4.53
-PDO PHP Extension
+## Server Requirements
+* PHP 8.1.5 + 10.4.24-MariaDB + Apache/2.4.53
+* PDO PHP Extension
 
-Preview
+## Preview
 ![login](https://user-images.githubusercontent.com/103181515/200394438-548ec13b-0336-4716-86b5-f00b11555d0d.png)
 ![monblog](https://user-images.githubusercontent.com/103181515/200394531-1d3cc7b6-8f7e-441c-b7ef-3cf0783ad518.png)
 ![addblog](https://user-images.githubusercontent.com/103181515/200394552-910c0c2a-b6c8-4a3e-b87b-0a23d97eaf2d.png)
